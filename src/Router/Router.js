@@ -7,6 +7,7 @@ import EmployeeProfile from "../Dashboard/EmployeeProfile/EmployeeProfile";
 import Employees from "../Dashboard/Employees/Employees";
 import Projects from "../Dashboard/Projects/Projects";
 import DashboardLayout from "../Layout/DashboardLayout";
+import DashboardLayouts from "../Layout/DashboardLayouts/DashboardLayouts";
 import Home from "../Page/Home/Home/Home";
 import SignIn from "../Page/SignIn/SignIn";
 import SignUp from "../Page/SignUp/SignUp";
@@ -33,7 +34,7 @@ export const  router = createBrowserRouter([
     },
     {
       path: '/dashboard',
-      element: <PrivetRoute><DashboardLayout></DashboardLayout></PrivetRoute>,
+      element: <PrivetRoute><DashboardLayouts></DashboardLayouts></PrivetRoute>,
       children: [
         {
           path: "/dashboard/dashboardEmployees",
