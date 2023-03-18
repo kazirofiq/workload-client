@@ -1,0 +1,200 @@
+.back-card {
+  float: right;
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  shape-outside: circle(50% at 30%);
+  clip-path: circle(50% at 110% 2%);
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.back-card-bottom-r {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  shape-outside: circle(50% at 30%);
+  clip-path: circle(25.8% at 100% 79%);
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.back-card-bottom-l {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  shape-outside: circle(50% at 30%);
+  clip-path: circle(30.9% at 0 100%);
+  position: absolute;
+  left: -20px;
+  bottom: -20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.container .card
+{
+    position: relative;
+    width: 250px;
+    background: linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.container .card:hover
+{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+.container .card::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.03);
+    pointer-events: none;
+    z-index: 1;
+}
+.percent
+{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000;
+    background: #222;
+    z-index: 1000;
+}
+.percent .number
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.percent .number h2 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 13px;
+  transition: 0.5s;
+}
+.card:hover .percent .number h2
+{
+    color: #fff;
+    font-size: 20px;
+}
+.percent .number h2 span {
+  font-size: 11px;
+  color: #fff;
+}
+.card:hover .percent .number h2 span
+{
+    color: #fff;
+}
+.text
+{
+    position: relative;
+    color: #777;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.card:hover .text
+{
+    color: #fff;
+}
+.svg-pro
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+}
+svg circle
+{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px,5px);
+}
+svg circle:nth-child(2)
+{
+   stroke-dasharray: 440;
+   stroke-dashoffset: 440; 
+}
+.card:nth-child(1) svg circle:nth-child(2)
+{
+    stroke-dashoffset: calc(440 - (440 * 90) / 100);
+    stroke: #a244b6;
+}
+.card:nth-child(2) svg circle:nth-child(2)
+{
+    stroke-dashoffset: calc(440 - (440 * 85) / 100);
+    stroke: #00a1ff;
+}
+.card:nth-child(3) svg circle:nth-child(2)
+{
+    stroke-dashoffset: calc(440 - (440 * 35) / 100);
+    stroke: #ff04f7;
+}
+.card:nth-child(1) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (150 * 90) / 90);
+    stroke: #a244b6;
+}
+.card-pro-2:nth-child(1) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (150 * 90) / 90);
+    stroke: #fe99b7;
+}
+.card-3:nth-child(1) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (250 * 90) / 90);
+    stroke: #9646b5;
+}
+.percent-1
+{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000;
+    background: #222;
+    z-index: 1000;
+}
+.card-3:nth-child(1) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (200 * 90) / 90);
+  stroke: #a244b6;
+}
+

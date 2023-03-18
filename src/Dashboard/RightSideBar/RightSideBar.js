@@ -9,9 +9,9 @@ import {
 
 const RightSideBar = () => {
   return (
-    <div className="grid grid-rows-[1fr_100px] h-screen mt-6 mr-6">
+    <div className="grid grid-rows-[1fr_100px] mb-10 mt-6  mr-6">
       <div>
-        <div className="card  bg-base-100 shadow-xl">
+        <div className="card bg-white bg-base-100 shadow-xl">
           <figure className="px-10 pt-10">
             <div className="avatar">
               <div className="w-24 rounded-full">
@@ -85,8 +85,8 @@ const RightSideBar = () => {
         </div>
       </div>
       {/* send money */}
-      <div className="mt-6">
-        <div className="card  bg-base-100 shadow-xl">
+      <div className="">
+        <div className="card mt-6 mb-8 bg-white shadow-xl">
           <div className="card-body">
             <h2 className="card-title">Send Money</h2>
             <div className="flex">

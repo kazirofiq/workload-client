@@ -2,9 +2,9 @@ import React from "react";
 
 const LeftSideBar = () => {
   return (
-    <div className="grid gap-8 grid-rows-[1fr_100px] h-screen mt-6 ml-6  ">
-      <div className="bg-base-100 ">
-        <ul className="menu  p-2 rounded-box">
+    <div className="grid gap-8 grid-rows-[1fr_100px]  h-screen mt-6 ml-6  ">
+      <div className=" bg-white rounded-lg">
+        <ul className="menu bg-white p-2 rounded-box">
           <li>
             <a>
               <svg
@@ -63,8 +63,8 @@ const LeftSideBar = () => {
             </a>
           </li>
         </ul>
-        <div className="divider p-10"></div>
-        <ul className="menu bg-base-100  p-2 rounded-box">
+        <div className="divider p-10 bg-white"></div>
+        <ul className="menu bg-white  p-2 rounded-box">
           <li>
             <a>
               <svg
@@ -126,7 +126,7 @@ const LeftSideBar = () => {
       </div>
       {/* upgrade pro */}
       <div>
-        <div className="card  bg-base-100 shadow-xl">
+        <div className="card bg-white bg-white shadow-xl">
           <figure className="px-10 pt-10">
             <div className="avatar">
               <div className="w-24 rounded-full">
