@@ -1,15 +1,22 @@
-import React from "react";
-import { FiSettings, } from "react-icons/fi";
+import React, { useContext } from "react";
 import { IoExitOutline, IoSettingsOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
+import { AuthContext } from "../../context/AuthProvider";
 
 const LeftSideBar = () => {
+  const {logOut} = useContext(AuthContext);
+    const handleLogout = () =>{
+        logOut()
+        .then(() =>{})
+        .catch(err => console.log(err));
+    }
   return (
-    <div className="grid gap-8 grid-rows-[1fr_100px]  h-screen mt-6 ml-6  ">
+    <div className="grid gap-8 grid-rows-[1fr_100px] w-full rounded-lg  mr-6 h-screen mt-6 ml-6  ">
       
-      <div className=" bg-white rounded-lg">
+      <div className=" bg-white w-full  rounded-lg">
         <ul className="menu bg-white p-2 rounded-box">
           <li>
-            <a>
+            <Link to='/dashboard'>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -25,10 +32,10 @@ const LeftSideBar = () => {
                 />
               </svg>
               Dashboard
-            </a>
+              </Link>
           </li>
           <li>
-            <a>
+            <Link to="/dashboard/document">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -45,7 +52,7 @@ const LeftSideBar = () => {
               </svg>
               Document
               
-            </a>
+              </Link>
           </li>
           <li>
             <a>
@@ -124,7 +131,7 @@ const LeftSideBar = () => {
             </div>
           </li>
           <li>
-          <div className="flex items-center text-red-600">
+          <div onClick={handleLogout} className="flex items-center text-red-600">
               
           <IoExitOutline className="text-4xl"></IoExitOutline >
                <h2>Log Out</h2>
@@ -134,8 +141,8 @@ const LeftSideBar = () => {
         </ul>
       </div>
       {/* upgrade pro */}
-      <div>
-        <div className="card bg-white bg-white shadow-xl">
+      <div className="hidden lg:block">
+        <div className="card  bg-white shadow-xl">
           <figure className="px-10 pt-10">
             <div className="avatar">
               <div className="w-24 rounded-full">

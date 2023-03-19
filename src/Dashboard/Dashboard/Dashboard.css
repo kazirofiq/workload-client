@@ -197,4 +197,8 @@ svg circle:nth-child(2)
   stroke-dashoffset: calc(440 - (200 * 90) / 90);
   stroke: #a244b6;
 }
+.table-back td, .table-back th{
+    background-color: #fff;
+    border: none;
+}
 

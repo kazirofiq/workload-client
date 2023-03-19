@@ -27,7 +27,7 @@ const SignUp = () => {
             updateUser(userInfo)
             .then(() =>{
                 saveUser(data.name, data.email);
-                navigate('/dashboard/admin');
+                navigate('/dashboard');
                 
             })
             .catch(err => console.log(err));
@@ -50,7 +50,7 @@ const SignUp = () => {
         .then(res => res.json())
         .then(data =>{
             setCreatedUserEmail(email);
-            navigate('/dashboard/admin');
+            navigate('/dashboard');
             
         })
       }

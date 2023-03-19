@@ -24,7 +24,7 @@ const SignIn = () => {
         const user = result.user;
         console.log(user)
         setLoginUserEmail(data.email);
-        navigate('/dashboard/admin');
+        navigate('/dashboard');
        
     })
     .catch(error => {

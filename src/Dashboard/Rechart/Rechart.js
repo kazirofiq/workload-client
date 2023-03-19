@@ -29,24 +29,12 @@ const Rechart = () => {
         }
     ]
     return (
-        <div className='bg-white p-2  rounded-xl'>
+        <div className=' p-2  rounded-xl'>
             <h2 className='font-bold text-xl'>Employees Details</h2>
-            <div className='lg:flex flex-wrap  gap-5'>
-                {/* <BarChart width={400} height={400} data={data}>
-                    <Bar dataKey="total" fill="#8884d8" />
-                    <XAxis dataKey="name" />
-                    <YAxis />
-                    <Tooltip />
-                </BarChart> */}
-
-                {/* <PieChart className='place-self-center' width={400} height={250} data={data}>
-                    <Pie data={data} dataKey="total" nameKey="name" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
-                    <Pie data={data} dataKey="total" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
-                </PieChart> */}
-
-                <LineChart width={350} height={220} data={data}>
+            <div className=''>
+               
+                    <LineChart className='mx-auto -ml-7' width={300} height={220} data={data}>
                     <Line type="monotone" dataKey="total" stroke="#8884d8" />
-                    <CartesianGrid stroke="#ccc" />
                     <XAxis dataKey="name" />
                     <YAxis />
                     <Tooltip />
