@@ -78,12 +78,12 @@ const Dashboard = () => {
         </div>
         <div>
           <div className="card bg-white  shadow-xl">
-            <div className="card-body items-center text-center">
-              <div className="flex items-center justify-end">
-                <h2 className="card-title ">Your finance Target </h2>
-                <FaEllipsisV className="text-end"></FaEllipsisV>
+            <div className=" p-4 items-center">
+              <div className="flex justify-between pb-6 items-center">
+                <h2 className=" text-left text-2xl font-bold">Your finance Target </h2>
+                <FaEllipsisV className="text-end cursor-pointer"></FaEllipsisV>
               </div>
-              <div class="card card-3">
+              <div class="card justify-center items-center card-3">
                 <div class="box">
                   <div class="percent percent-1">
                     <svg className="svg-pro">
@@ -92,13 +92,22 @@ const Dashboard = () => {
                     </svg>
                     <div class="number">
                       <h2>
-                        90<span>%</span>
+                        60<span>%</span>
                       </h2>
                     </div>
                   </div>
                 </div>
               </div>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div className="grid grid-cols-2 mt-4 items-center justify-between ">
+                  <div>
+                    <h2 className="text-lg font-bold">Result Achieved</h2>
+                    <p>Achieved well and smoothly</p>
+                  </div>
+                  <div>
+                    <h2 className="text-lg font-bold">In the Process</h2>
+                    <p>Waiting In target <br /> process</p>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
@@ -128,7 +137,7 @@ const Dashboard = () => {
                     <div className="avatar">
                       <div className="mask mask-squircle w-12 h-12">
                         <img
-                          src="/tailwind-css-component-profile-2@56w.png"
+                          src="https://i.ibb.co/X2YQP25/images-2.png"
                           alt="Avatar Tailwind CSS Component"
                         />
                       </div>
@@ -160,7 +169,7 @@ const Dashboard = () => {
                     <div className="avatar">
                       <div className="mask mask-squircle w-12 h-12">
                         <img
-                          src="/tailwind-css-component-profile-3@56w.png"
+                          src="https://i.ibb.co/rGWFRZ3/female-avatar-icon-flat-style-female-user-icon-cartoon-woman-avatar-pink-hair-vector-stock-91462795.jpg"
                           alt="Avatar Tailwind CSS Component"
                         />
                       </div>

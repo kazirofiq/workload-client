@@ -23,22 +23,22 @@ const RightSideBar = () => {
             <h2 className="card-title">Rofiqul</h2>
             <p>Mern Stack developer</p>
             <div className="grid grid-cols-3 gap-3 ">
-              <div>
-                <FaUsers></FaUsers>
+              <div className="bg-[#6d4ca5] p-2 cursor-pointer rounded-xl">
+                <FaUsers className="text-3xl text-white "></FaUsers>
               </div>
-              <div>
+              <div className="bg-[#6d4ca5] p-2 cursor-pointer rounded-xl">
                 {" "}
-                <FaFacebookMessenger></FaFacebookMessenger>
+                <FaFacebookMessenger className="text-3xl text-white "></FaFacebookMessenger>
               </div>
-              <div>
+              <div className="bg-[#6d4ca5] p-2 cursor-pointer rounded-xl">
                 {" "}
-                <FaStackExchange></FaStackExchange>
+                <FaStackExchange className="text-3xl text-white "></FaStackExchange>
               </div>
             </div>
           </div>
           <div className="divider p-10"></div>
           <div>
-            <h2 className="text-left ml-8">About</h2>
+            <h2 className="text-left ml-8 font-bold">About</h2>
             <p className="text-left ml-8">This is our all details client</p>
             <div className="grid  grid-cols-2 items-center p-6">
               <div className="">
@@ -49,7 +49,7 @@ const RightSideBar = () => {
                 </div>
               </div>
               <div className="-ml-6 text-left ">
-                <h2>Alomgir</h2>
+                <h2 className="font-bold ">Alomgir</h2>
                 <p className="whitespace-nowrap">front-end developer</p>
               </div>
             </div>
@@ -62,7 +62,7 @@ const RightSideBar = () => {
                 </div>
               </div>
               <div className="-ml-6 text-left ">
-                <h2>Alomgir</h2>
+                <h2 className="font-bold font-bold">Alomgir</h2>
                 <p className="whitespace-nowrap">front-end developer</p>
               </div>
             </div>
@@ -75,7 +75,7 @@ const RightSideBar = () => {
                 </div>
               </div>
               <div className="-ml-6 text-left ">
-                <h2>Alomgir</h2>
+                <h2 className="font-bold font-bold">Alomgir</h2>
                 <p className="whitespace-nowrap">front-end developer</p>
               </div>
             </div>
@@ -88,10 +88,10 @@ const RightSideBar = () => {
       <div className="">
         <div className="card mt-6 mb-8 bg-white shadow-xl">
           <div className="card-body">
-            <h2 className="card-title">Send Money</h2>
+            <h2 className="card-title font-bold">Send Money</h2>
             <div className="flex">
                 <p>Your cash</p>
-                <p>$ 140</p>
+                <p className="font-bold text-2xl">$ 140</p>
             </div>
           </div>
         </div>
