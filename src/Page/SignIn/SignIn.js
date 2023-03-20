@@ -3,6 +3,7 @@ import React, { useContext, useState } from "react";
 import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider';
+import './SignIn.css'
 
 
 
@@ -55,7 +56,7 @@ const SignIn = () => {
                     <input className='btn btn-accent w-full' type="submit" value='Login'/>
                         {loginError && <p className='text-red-600'>{loginError}</p>}
                     </form>
-                    <p>New to WorkLoad? <Link className='text-secondary' to='/signup'>Create new account</Link></p> 
+                    <p >New to WorkLoad? <Link className='text-red-600' to='/signup'>Create new account</Link></p> 
                     <div className="divider">OR</div>
                     <button className='uppercase btn btn-outline w-full'>CONTINUE WITH GOOGLE</button>
                  </div>
