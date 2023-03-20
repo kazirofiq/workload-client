@@ -21,7 +21,7 @@ const LeftSideBar = () => {
         <ul className="menu bg-white p-2 rounded-box">
           <li>
             <Link to="/dashboard">
-              <div className="flex gap-4 items-center">
+              <div className="flex gap-4 items-center hover:">
                 <AiOutlineHome className="text-xl"></AiOutlineHome>
                 <h2>Dashboard</h2>
               </div>

@@ -10,9 +10,9 @@ const Header = () => {
         <FaElementor className="text-4xl cursor-pointer"></FaElementor>
         
       </label>
-      <div className="flex flex-1 gap-2 items-center justify-center bg-white p-1 lg:p-3 rounded-xl">
+      <div className="flex flex-1 gap-2 items-center justify-center bg-white p-1 lg:p-2 rounded-xl">
         <FaSearch className=" bg-white"></FaSearch>
-        <input type="text" placeholder="Search" className="input  w-full " />
+        <input type="text" placeholder="Search" className="input bg-white w-full " />
       </div>
       <div className="p-1 lg:p-3 bg-white w-[100px] rounded-xl">
         <div className="indicator">

@@ -33,7 +33,7 @@ const Rechart = () => {
             <h2 className='font-bold text-xl'>Employees Details</h2>
             <div className=''>
                
-                    <LineChart className='mx-auto -ml-7' width={300} height={220} data={data}>
+                    <LineChart className='mx-auto lg:-ml-7' width={300} height={220} data={data}>
                     <Line type="monotone" dataKey="total" stroke="#8884d8" />
                     <XAxis dataKey="name" />
                     <YAxis />

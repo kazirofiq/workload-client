@@ -119,15 +119,16 @@ const Dashboard = () => {
         </div>
       </div>
       {/* Project finance  */}
-      <div className="overflow-x-auto mt-6  w-full">
-        <table className="table w-full table-back">
+      <div className="overflow-x-auto mt-6  w-full"><table className="table w-full table-back">
+          
           {/* head */}
           <thead>
             <tr>
               <th>Name</th>
-              <th>Job</th>
-              <th>Favorite Color</th>
-              <th></th>
+              <th>Progress</th>
+              <th>Achieved</th>
+              <th>Status</th>
+              <th>View All</th>
             </tr>
           </thead>
           <tbody>
@@ -138,7 +139,7 @@ const Dashboard = () => {
                   <div className="avatar">
                     <div className="mask mask-squircle w-12 h-12">
                       <img
-                        src="/tailwind-css-component-profile-2@56w.png"
+                        src="https://i.ibb.co/7Q0p91X/images-3.png"
                         alt="Avatar Tailwind CSS Component"
                       />
                     </div>
@@ -149,17 +150,16 @@ const Dashboard = () => {
                   </div>
                 </div>
               </td>
-              <td>
-                Zemlak, Daniel and Leannon
-                <br />
-                <span className="badge badge-ghost badge-sm">
-                  Desktop Support Technician
-                </span>
-              </td>
-              <td>Purple</td>
               <th>
-                <button className="btn btn-ghost btn-xs">details</button>
+               Meet the Target
+               </th>
+              <th>$ 14440</th>
+              <th>
+                Financial Officer
               </th>
+              <td>
+              <FaEllipsisH className="text-end cursor-pointer"></FaEllipsisH>
+              </td>
             </tr>
             {/* row 2 */}
             <tr>
@@ -168,7 +168,7 @@ const Dashboard = () => {
                   <div className="avatar">
                     <div className="mask mask-squircle w-12 h-12">
                       <img
-                        src="/tailwind-css-component-profile-3@56w.png"
+                        src="https://i.ibb.co/fpHZ62q/download-13.png"
                         alt="Avatar Tailwind CSS Component"
                       />
                     </div>
@@ -180,15 +180,14 @@ const Dashboard = () => {
                 </div>
               </td>
               <td>
-                Carroll Group
-                <br />
-                <span className="badge badge-ghost badge-sm">
-                  Tax Accountant
-                </span>
+                On Going
               </td>
-              <td>Red</td>
+              <td>$99900</td>
               <th>
-                <button className="btn btn-ghost btn-xs">details</button>
+                Project Manager
+              </th>
+              <th>
+              <FaEllipsisH className=" cursor-pointer text-right"></FaEllipsisH>
               </th>
             </tr>
             
